@@ -1,9 +1,12 @@
 ﻿<metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+  <remove-node  path="/api/package[@name='clarifai2.dto.input']/class[@name='ClarifaiFileImage']/method[@name='withCrop' and count(parameter)=1 and parameter[1][@type='clarifai2.dto.input.Crop']]"  />
+  <remove-node path="/api/package[@name='clarifai2.dto']/interface[@name='HasClarifaiIDRequired']/method[@name='id' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='clarifai2.dto.input']/class[@name='ClarifaiImage']/method[@name='withCrop' and count(parameter)=1 and parameter[1][@type='clarifai2.dto.input.Crop']]"/>
+  <attr path="/api/package[@name='clarifai2.dto.model']/class[@name='UnknownModel']/method[@name='outputInfo' and count(parameter)=0]" name="managedName">UnknownOutputInfo</attr>
+  <attr path="/api/package[@name='clarifai2.dto.model']/class[@name='ColorModel']/method[@name='outputInfo' and count(parameter)=0]" name="managedName">ColorOutputInfo</attr>
+  <attr path="/api/package[@name='clarifai2.dto.model']/class[@name='ClusterModel']/method[@name='outputInfo' and count(parameter)=0]" name="managedName">ClusterOutputInfo</attr>
+  <attr path="/api/package[@name='clarifai2.dto.model']/class[@name='LogoModel']/method[@name='outputInfo' and count(parameter)=0]" name="managedName">LogoOutputInfo</attr>
+  <attr path="/api/package[@name='clarifai2.dto.model']/class[@name='FocusModel']/method[@name='outputInfo' and count(parameter)=0]" name="managedName">FocusOutputInfo</attr>
+  <attr path="/api/package[@name='clarifai2.dto.model']/class[@name='FaceDetectionModel']/method[@name='outputInfo' and count(parameter)=0]" name="managedName">FaceDetectionOutputInfo</attr>
+  <attr path="/api/package[@name='clarifai2.dto.model']/class[@name='EmbeddingModel']/method[@name='outputInfo' and count(parameter)=0]" name="managedName">EmbeddingOutputInfo</attr>
 </metadata>
